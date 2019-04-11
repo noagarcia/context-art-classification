@@ -23,7 +23,7 @@ Pytorch code for the classification part of our ICMR 2019 paper [Context-Aware E
 
 ### Train
 
-- To train MLT multi-classifier run:
+- To train MTL multi-classifier run:
     
     `python main.py --mode train --model mlt --dir_dataset $semart`
     
@@ -35,7 +35,7 @@ Where `$semart` is the path to SemArt dataset and `$attribute` is the classifier
 
 ### Test
 
-- To test MLT multi-classifier run:
+- To test MTL multi-classifier run:
     
     `python main.py --mode test --model mlt --dir_dataset $semart`
     
