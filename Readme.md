@@ -1,6 +1,6 @@
 ## Context Embeddings for Art Classification
 
-Pytorch code for the classification part of our ICMR 2019 paper "Context-Aware Embeddings for Automatic Art Analysis". For the retrieval part, check [this other repository](https://github.com/noagarcia/context-art-retrieval). 
+Pytorch code for the classification part of our ICMR 2019 paper [Context-Aware Embeddings for Automatic Art Analysis](https://arxiv.org/abs/1904.04985). For the retrieval part, check [this other repository](https://github.com/noagarcia/context-art-retrieval). 
 
 
 ### Setup
