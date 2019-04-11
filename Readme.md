@@ -46,7 +46,7 @@ Where `$semart` is the path to SemArt dataset and `$attribute` is the classifier
 Where `$semart` is the path to SemArt dataset, `$attribute` is the classifier type (i.e. `type`, `school`, `time`, or `author`), and `$model-file` is the path to the trained model.
 
 You can download our pre-trained models from:
-- [MLT](http://noagarciad.com/data/ICMR2019/best-mtl-model.pth.tar)
+- [MTL](http://noagarciad.com/data/ICMR2019/best-mtl-model.pth.tar)
 - [KGM Type](http://noagarciad.com/data/ICMR2019/best-kgm-type-model.pth.tar)
 - [KGM School](http://noagarciad.com/data/ICMR2019/best-kgm-school-model.pth.tar)
 - [KGM Timeframe](http://noagarciad.com/data/ICMR2019/best-kgm-time-model.pth.tar)
