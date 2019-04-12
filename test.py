@@ -4,7 +4,6 @@ import numpy as np
 import torch
 from torchvision import transforms
 
-import utils
 from model_mtl import MTL
 from model_kgm import KGM
 from dataloader_mtl import ArtDatasetMTL
@@ -69,25 +68,22 @@ def test_knowledgegraph(args_dict):
         # Output of the model
         with torch.no_grad():
             output = model(input_var[0])
-        _, predicted = torch.max(output[0], 1)
+            outsoftmax = torch.nn.functional.softmax(output[0])
+        conf, predicted = torch.max(outsoftmax, 1)
 
         # Store embeddings
         if i==0:
             out = predicted.data.cpu().numpy()
             label = target[0].cpu().numpy()
+            scores = conf.data.cpu().numpy()
         else:
             out = np.concatenate((out,predicted.data.cpu().numpy()),axis=0)
             label = np.concatenate((label,target[0].cpu().numpy()),axis=0)
+            scores = np.concatenate((scores, conf.data.cpu().numpy()),axis=0)
 
     # Compute Accuracy
     acc = np.sum(out == label)/len(out)
     print('Model %s\tTest Accuracy %.03f' % (args_dict.model_path, acc))
-
-    # import sys
-    # import numpy
-    # numpy.set_printoptions(threshold=sys.maxsize)
-    # print(out)
-    # print(label)
 
 
 def test_multitask(args_dict):

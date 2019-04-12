@@ -72,6 +72,7 @@ Classification results on SemArt:
 
 ### Examples
 
+Paintings with the highest scores for each class:
 
 
 ### Citation

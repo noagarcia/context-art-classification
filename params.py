@@ -6,11 +6,11 @@ def get_parser():
 
     parser.add_argument('--mode', default='test', type=str, help='Mode (train | test)')
     parser.add_argument('--model', default='kgm', type=str, help='Model (mtl | kgm). mlt for multitask learning model. kgm for knowledge graph model.' )
-    parser.add_argument('--att', default='author', type=str, help='Attribute classifier (type | school | time | author) (only kgm model).')
+    parser.add_argument('--att', default='time', type=str, help='Attribute classifier (type | school | time | author) (only kgm model).')
 
     # Directories
     parser.add_argument('--dir_data', default='Data')
-    parser.add_argument('--dir_dataset', default='/home/noa/Datasets/SemArt')
+    parser.add_argument('--dir_dataset', default='')
     parser.add_argument('--dir_images', default='Images/')
     parser.add_argument('--dir_model', default='Models/')
 
@@ -40,10 +40,7 @@ def get_parser():
     parser.add_argument('--lambda_e', default=0.1, type=float)
 
     # Test
-    parser.add_argument('--model_path', default='Models/model_e053_v-0.561.pth.tar', type=str)
+    parser.add_argument('--model_path', default='Models/best-kgm-time-model.pth.tar', type=str)
     parser.add_argument('--no_cuda', action='store_true')
-
-    # # Encoder
-    # parser.add_argument('--margin', default=0.1, help='Loss margin', type=float)
 
     return parser

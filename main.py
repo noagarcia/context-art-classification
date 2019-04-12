@@ -5,7 +5,6 @@ from params import get_parser
 from train import run_train
 from test import run_test
 
-
 if __name__ == "__main__":
 
     # Load parameters

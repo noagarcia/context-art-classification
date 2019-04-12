@@ -57,8 +57,6 @@ class ArtDatasetKGM(data.Dataset):
         else:
             idclass = vocab['UNK']
 
-        print('%s %d' %(name, idclass))
-
         return idclass
 
 
