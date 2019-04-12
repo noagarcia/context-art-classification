@@ -74,6 +74,10 @@ Classification results on SemArt:
 
 Paintings with the highest scores for each class:
 
+![example](https://github.com/noagarcia/context-art-classification/blob/master/examples/examples_type.png?raw=true
+)
+![example](https://github.com/noagarcia/context-art-classification/blob/master/examples/examples_school.png?raw=true
+)
 
 ### Citation
 
