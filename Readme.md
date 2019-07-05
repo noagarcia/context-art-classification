@@ -25,7 +25,7 @@ Pytorch code for the classification part of our ICMR 2019 paper [Context-Aware E
 
 - To train MTL multi-classifier run:
     
-    `python main.py --mode train --model mlt --dir_dataset $semart`
+    `python main.py --mode train --model mtl --dir_dataset $semart`
     
 - To train KGM classifier run:
     
@@ -37,7 +37,7 @@ Where `$semart` is the path to SemArt dataset and `$attribute` is the classifier
 
 - To test MTL multi-classifier run:
     
-    `python main.py --mode test --model mlt --dir_dataset $semart`
+    `python main.py --mode test --model mtl --dir_dataset $semart`
     
 - To test KGM classifier run:
     
