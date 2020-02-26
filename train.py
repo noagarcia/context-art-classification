@@ -172,7 +172,7 @@ def valEpoch(args_dict, val_loader, model, criterion, epoch):
                 label = np.concatenate((label,target[0].cpu().numpy()),axis=0)
 
     # Accuracy
-    if args_dict.model == 'mlt':
+    if args_dict.model == 'mtl':
         acc_type = np.sum(out_type == label_type)/len(out_type)
         acc_school = np.sum(out_school == label_school) / len(out_school)
         acc_tf = np.sum(out_time == label_tf) / len(out_time)
