@@ -84,7 +84,7 @@ Paintings with the highest scores for each class:
 
 ```
 @InProceedings{Garcia2017Context,
-   author    = {Noa Garcia, Benjamin Renoust and Yuta Nakashima},
+   author    = {Noa Garcia and Benjamin Renoust and Yuta Nakashima},
    title     = {Context-Aware Embeddings for Automatic Art Analysis},
    booktitle = {Proceedings of the ACM International Conference on Multimedia Retrieval},
    year      = {2019},
