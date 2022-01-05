@@ -1,3 +1,5 @@
+2022/01/05: Downloading links for the pre-trained models have been updated. Sorry for the wait.
+
 ## Context Embeddings for Art Classification
 
 Pytorch code for the classification part of our ICMR 2019 paper [Context-Aware Embeddings for Automatic Art Analysis](https://arxiv.org/abs/1904.04985). For the retrieval part, check [this other repository](https://github.com/noagarcia/context-art-retrieval). 
@@ -5,7 +7,7 @@ Pytorch code for the classification part of our ICMR 2019 paper [Context-Aware E
 
 ### Setup
 
-1. Download dataset from [here](http://noagarciad.com/SemArt/).
+1. Download dataset from [here](https://noagarcia.github.io/SemArt/).
 
 2. Clone the repository: 
     
@@ -19,7 +21,7 @@ Pytorch code for the classification part of our ICMR 2019 paper [Context-Aware E
     - pandas (`conda install -c anaconda pandas`)
     - gensim (`conda install -c anaconda gensim`)
 
-4. For the KGM model, download the pre-computed graph embeddings from [here](http://noagarciad.com/data/ICMR2019/semart-artgraph-node2vec.model), and save the file into the `Data/` directory.
+4. For the KGM model, download the pre-computed graph embeddings from [here](https://drive.google.com/file/d/1PSXmyqiDcsdTHBUWyoX5b1EMBQLhJxv-/view?usp=sharing), and save the file into the `Data/` directory.
 
 ### Train
 
@@ -46,11 +48,11 @@ Where `$semart` is the path to SemArt dataset and `$attribute` is the classifier
 Where `$semart` is the path to SemArt dataset, `$attribute` is the classifier type (i.e. `type`, `school`, `time`, or `author`), and `$model-file` is the path to the trained model.
 
 You can download our pre-trained models from:
-- [MTL](http://noagarciad.com/data/ICMR2019/best-mtl-model.pth.tar)
-- [KGM Type](http://noagarciad.com/data/ICMR2019/best-kgm-type-model.pth.tar)
-- [KGM School](http://noagarciad.com/data/ICMR2019/best-kgm-school-model.pth.tar)
-- [KGM Timeframe](http://noagarciad.com/data/ICMR2019/best-kgm-time-model.pth.tar)
-- [KGM Author](http://noagarciad.com/data/ICMR2019/best-kgm-author-model.pth.tar)
+- [MTL](https://drive.google.com/file/d/1KOQgEksQH7sU5syl5Vv-SRilijzae5sP/view?usp=sharing)
+- [KGM Type](https://drive.google.com/file/d/1zLdvyy6gSw3ENAhLin6c1-DvnvJ9_CU9/view?usp=sharing)
+- [KGM School](https://drive.google.com/file/d/1h5sYNsINQRC4LtdoyMcRi16Ho6evx00n/view?usp=sharing)
+- [KGM Timeframe](https://drive.google.com/file/d/1QTsNQbQmQFUgRiWiYjvuPQrgtzL89Ynj/view?usp=sharing)
+- [KGM Author](https://drive.google.com/file/d/1dFThWHACyX08mBk8lz-4sC8XhF-VMYam/view?usp=sharing)
 
 ### Results
  
